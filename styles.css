@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+     background-color: #abe9cd;
+background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); 
+min-height: 100vh;
+
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+    margin: 20px 0 20px 0;
+    font-weight: 900;
+    font-size:xx-large;
+}
+.enter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.enter input{
+    height: 40px;
+    margin: 10px;
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px gray;
+} 
+.enter button{
+    height: 40px;
+    width: 40px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px gray;
+   z-index: 2;
+    
+}
+.enter button:hover{
+    box-shadow: 3px 3px gray;
+    background-color: #4dccc6;
+background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.b-list{
+    min-width: 30%;
+     list-style: none;
+}
+.todo{
+    height: 25px;
+    margin: 10px;
+    background: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 2px 2px gray;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    font-size: medium;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.todo li{
+    flex: 1;
+    padding-left: 10px;
+}
+.donebtn,.trashbtn{
+    width: 22px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.trashbtn:hover{
+    background-color: red;
+    box-shadow: 3px 3px grey;
+}
+.donebtn:hover{
+    background-color: rgb(98, 218, 98);
+    box-shadow: 3px 3px grey;
+}
