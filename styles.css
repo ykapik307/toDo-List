@@ -7,13 +7,20 @@
 body{
      background-color: #abe9cd;
 background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%); 
-min-height: 100vh;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 
 }
 header{
-    text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     font-size: xx-large;
-    margin: 20px 0 20px 0;
+    margin: 10px 0px;
     font-weight: 900;
     font-size:xx-large;
 }
@@ -21,7 +28,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content:center;
 }
 .enter input{
     height: 40px;
@@ -30,6 +37,7 @@ header{
     border: 2px solid gray;
     border-radius: 5px;
     box-shadow: 2px 2px gray;
+    padding-left: 10px;
 } 
 .enter button{
     height: 40px;
@@ -38,7 +46,7 @@ header{
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px gray;
-   z-index: 2;
+    
     
 }
 .enter button:hover{
@@ -59,7 +67,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
      list-style: none;
 }
 .todo{
-    height: 25px;
+    height: 30px;
     margin: 10px;
     background: white;
     color: black;
@@ -71,13 +79,20 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
     background-color: #4dccc6;
     background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
     font-size: medium;
-    font-style: italic;
-    font-weight: bold;
+    
+    max-width: 500px;
+    
     
 }
 .todo li{
     flex: 1;
     padding-left: 10px;
+    max-width: 400px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.butdiv{
+    min-width: 60px;
 }
 .donebtn,.trashbtn{
     width: 22px;
@@ -92,4 +107,16 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 .donebtn:hover{
     background-color: rgb(98, 218, 98);
     box-shadow: 3px 3px grey;
+}
+@media screen and (max-width: 600px) {
+    .enter input{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .todo{
+        max-width: 300px;
+        font-size: small;
+        overflow: hidden;
+    }
 }
