@@ -19,6 +19,8 @@ adbtn.addEventListener('click',() => {
          task.innerHTML=txt;
          task.classList.add("thingsToo");
          //check button
+         let butdiv=document.createElement("div");
+         butdiv.classList.add("butdiv");
          let checkbtn=document.createElement('button');
          checkbtn.innerHTML='<i class="fas fa-check-square"></i>';
          checkbtn.classList.add("donebtn");
@@ -27,9 +29,11 @@ adbtn.addEventListener('click',() => {
          removebtn.innerHTML='<i class="fas fa-trash"></i>';
          removebtn.classList.add("trashbtn");
         //Now we need to append the two buttons and the list item to the todoDiv
+        
+        butdiv.appendChild(checkbtn);
+        butdiv.appendChild(removebtn);
         todoDiv.appendChild(task);
-        todoDiv.appendChild(checkbtn);
-        todoDiv.appendChild(removebtn);
+        todoDiv.appendChild(butdiv);
         //now we need to append this todoDiv to the list
         list.appendChild(todoDiv);
         add.value="";
